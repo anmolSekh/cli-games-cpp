@@ -1,8 +1,10 @@
 
-#include "cli-games-cpp/gameMenu.cpp"
+#include "cli-games-cpp/gameMenu.hpp"
 
 int main() {
-    std::cout << "List of games:\n";
+    GameMenu gm;
+    gm.greet();
+    gm.options();
     //function to list all game names
     //
     return 0;

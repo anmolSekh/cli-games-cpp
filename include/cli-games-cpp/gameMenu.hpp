@@ -1,9 +1,10 @@
 #include <iostream>
-#ifendif GAMEMENU_H
+//add all of the includes for each game here
+#ifndef GAMEMENU_H
 #define GAMEMENU_H
 class GameMenu {
     public:
         void greet() const;
         void options() const;
-}
+};
 #endif
