@@ -38,10 +38,11 @@ void GameMenu::options() const{
     // std::cin >> x;
     if(x == 0) {
         RockPaperScissors * rps = new RockPaperScissors();
+        rps->play();
     } else {
         RockPaperScissors * rps = new RockPaperScissors(x);
         rps->play();
     }
-
+    
      
 }

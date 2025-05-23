@@ -50,7 +50,8 @@ void RockPaperScissors::play() {
         } else {
             choice = 'S';
         }
-        cpu_num = rand() % 3;
+        cpu_num = rand() % 3; //almost always generating '1'
+        // std::cout << "Random number generated:\t" << cpu_num << std::endl; 
         if (cpu_num == 0) {
             cpu_choice = 'R';
         } else if (cpu_num == 1) {
@@ -73,6 +74,11 @@ void RockPaperScissors::play() {
             std::cout << "ROUND LOSE!\n";
         }
     }
+    // std::cout << "Your wins:\t" << wins
+    //             <<"\nYour losses:\t" << loss << std::endl;
+
+    std::cout << wins
+                <<"-" << loss << std::endl;
     if(wins > loss) {
         std::cout << "YOU WIN!!!\n";
     } else {
