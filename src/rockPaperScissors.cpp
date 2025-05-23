@@ -74,8 +74,6 @@ void RockPaperScissors::play() {
             std::cout << "ROUND LOSE!\n";
         }
     }
-    // std::cout << "Your wins:\t" << wins
-    //             <<"\nYour losses:\t" << loss << std::endl;
 
     std::cout << wins
                 <<"-" << loss << std::endl;

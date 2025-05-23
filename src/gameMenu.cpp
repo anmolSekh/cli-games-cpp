@@ -10,6 +10,7 @@ void GameMenu::options() const{
     int max = 1;
     int x;
     std::cout << "1. Rock Paper Scissors" << std::endl;
+    std::cout << "Incoming games: Blackjack, Dice, Turn-based RPG\n";
     while (true) {
         std::cin >> i;
 
